@@ -31,7 +31,8 @@
     "recharts": "^2.13.3",
     "sonner": "^1.7.0",
     "tailwind-merge": "^2.5.5",
-    "tailwindcss-animate": "^1.0.7"
+    "tailwindcss-animate": "^1.0.7",
+    "cobe": "^0.6.3"
   },
   "devDependencies": {
     "@types/node": "^20",

@@ -32,6 +32,7 @@ import {
 } from "@/components/ui/sidebar";
 import { Link } from "@/lib/types";
 import { getKPIColorAndStatus } from "@/lib/utils";
+import Image from "next/image";
 
 export default function DashboardPage() {
   const [isAddLinkModalOpen, setIsAddLinkModalOpen] = useState(false);
@@ -93,14 +94,9 @@ export default function DashboardPage() {
           <SidebarMenu>
             <SidebarMenuItem>
               <SidebarMenuButton size="lg" asChild>
-                <a href="#">
-                  <div className="flex aspect-square size-8 items-center justify-center rounded-lg bg-sidebar-primary text-sidebar-primary-foreground">
-                    <Activity className="size-4" />
-                  </div>
-                  <div className="flex flex-col gap-0.5 leading-none">
-                    <span className="font-semibold">Uptime Monitor</span>
-                    <span className="">Dashboard</span>
-                  </div>
+                <a href="/dashboard">
+                  <Image src={"/logo.png"} width={140} height={110} alt='logo'/>
+                  
                 </a>
               </SidebarMenuButton>
             </SidebarMenuItem>
