@@ -63,9 +63,9 @@ export default function AddLinkModal({ isOpen, onClose }: AddLinkModalProps) {
               <SelectValue placeholder="Select duration" />
             </SelectTrigger>
             <SelectContent>
-              <SelectItem value="1">1 hour</SelectItem>
-              <SelectItem value="3">3 hours</SelectItem>
-              <SelectItem value="6">6 hours</SelectItem>
+              <SelectItem value="1">1 Day</SelectItem>
+              <SelectItem value="3">3 Days</SelectItem>
+              <SelectItem value="6">6 Days</SelectItem>
             </SelectContent>
           </Select>
           <Button type="submit" className="w-full">Add Link</Button>
