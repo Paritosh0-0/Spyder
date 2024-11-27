@@ -2,15 +2,15 @@
   "crons": [
     {
       "path": "/api/cron/uptime-check?interval=1",
-      "schedule": "0 * * * *"
+      "schedule": "0 0 * * *"
     },
     {
       "path": "/api/cron/uptime-check?interval=2",
-      "schedule": "0 */2 * * *"
+      "schedule": "0 0 * * *"
     },
     {
       "path": "/api/cron/uptime-check?interval=3",
-      "schedule": "0 */3 * * *"
+      "schedule": "0 0 * * *"
     }
   ]
 }
