@@ -7,10 +7,6 @@
     {
       "path": "/api/cron/uptime-check?interval=2",
       "schedule": "0 0 * * *"
-    },
-    {
-      "path": "/api/cron/uptime-check?interval=3",
-      "schedule": "0 0 * * *"
     }
   ]
 }
