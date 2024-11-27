@@ -60,7 +60,7 @@ export default function Home() {
                     Global Monitoring Network
                   </h2>
                   <p className="text-gray-500 dark:text-gray-400 md:text-lg">
-                    Monitor your services from multiple locations worldwide. Get real-time insights into your application's performance and availability.
+                    Monitor your services from multiple locations worldwide. Get real-time insights into your application&apos;s performance and availability.
                   </p>
                 </div>
                 <div className="space-y-4">
