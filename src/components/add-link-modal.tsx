@@ -21,7 +21,7 @@ export default function AddLinkModal({ isOpen, onClose }: AddLinkModalProps) {
   const queryClient = useQueryClient()
 
   const addLinkMutation = useMutation({
-    mutationFn: async (newLink: { url: string; duration: number; user_id: string }) => {
+    mutationFn: async (newLink: { url: string; cron_interval: number; user_id: string }) => {
       const { data, error } = await supabase
         .from('links')
         .insert([newLink])
@@ -31,7 +31,7 @@ export default function AddLinkModal({ isOpen, onClose }: AddLinkModalProps) {
     },
     onSuccess: () => {
       queryClient.invalidateQueries({ queryKey: ['links'] })
-      toast.success("Link added successfully")
+      toast.success( 'Link added successfully' )
       onClose()
     },
     onError: () => {
@@ -42,7 +42,7 @@ export default function AddLinkModal({ isOpen, onClose }: AddLinkModalProps) {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
     if (!session?.user.id) return
-    addLinkMutation.mutate({ url, duration: parseInt(duration), user_id: session.user.id })
+    addLinkMutation.mutate({ url, cron_interval: parseInt(duration), user_id: session.user.id })
   }
 
   return (

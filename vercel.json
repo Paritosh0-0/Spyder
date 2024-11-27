@@ -1,0 +1,16 @@
+{
+  "crons": [
+    {
+      "path": "/api/cron/uptime-check?interval=1",
+      "schedule": "0 * * * *"
+    },
+    {
+      "path": "/api/cron/uptime-check?interval=2",
+      "schedule": "0 */2 * * *"
+    },
+    {
+      "path": "/api/cron/uptime-check?interval=3",
+      "schedule": "0 */3 * * *"
+    }
+  ]
+}
